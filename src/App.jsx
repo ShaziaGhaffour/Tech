@@ -18,6 +18,7 @@ import Checkout from './Components/CheckOut';
 import OrderSection from './Components/Order';
 import ProductTop from './Components/ProductTop';
 import Banners from './Components/Homepagecomponents/Banners';
+import PhoneCaseCatalog from './Components/Search';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
         <Route path="/cart" element={<Bag />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/order" element={<OrderSection />} />
+        <Route path="/PhoneCaseCatalog" element={<PhoneCaseCatalog />} />
+        
       </Routes>
     </Router>
   );

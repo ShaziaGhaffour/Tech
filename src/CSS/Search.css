@@ -1,0 +1,143 @@
+.phone-catalog {
+  font-family: sans-serif;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+.search-container {
+ position: relative;
+  width: 100%;
+  /* margin: 20px auto; */
+  margin-bottom: 35px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.clear-btn {
+    background: transparent;
+    width: 50px;
+    /* height: 40px; */
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0 5px;
+  user-select: none;
+}
+
+.clear-btn:hover {
+  color: #6e0e0e;
+}
+
+.search-input {
+  width: 50%;
+  padding: 10px 40px 10px 15px; 
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+}
+.search-icon {
+  position: absolute;
+  left: 340px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+.search-input::placeholder {
+  color: #999;
+}
+.search-input:focus {
+  border-color: #6e0e0e;
+}
+.main-content {
+  display: flex;
+}
+
+.sidebar {
+  width: 40%;
+  max-width: 600px; 
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap !important;     
+}
+
+.sidebar ul li{
+display: flex;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+ font-size: 13px;
+ font-weight: 100;
+}
+.phone-models {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.phone-model {
+ width: 40%; 
+ display: flex;
+ flex-wrap: wrap;
+ white-space: nowrap;
+  list-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.phone-model.active {
+  background-color: #ddd;
+
+}
+.phone-model:hover {
+  color: red;
+}
+
+.products-grid {
+ width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; 
+  justify-content: flex-start;
+  margin-top: -15px;
+}
+
+.product-card {
+ width: 25% !important; 
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.product-card img {
+  width: 60px;
+  height: auto;
+}
+
+.product-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}

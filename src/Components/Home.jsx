@@ -1,8 +1,8 @@
 import React from 'react';
 import Banners from './Homepagecomponents/Banners';
 import Categories from './Homepagecomponents/Category';
-import Product from '../Components/Homepagecomponents/Product';
-import BestSellerProduct from '../Components/Homepagecomponents/BestSellerProduct'
+import Product from './Homepagecomponents/Product';
+import BestSellerProduct from './Homepagecomponents/BestSellerProduct'
 import TopBrands from './TopBrands';
 import SmartWatch from './Homepagecomponents/SmartWatch';
 import OurBlogs from './Homepagecomponents/OurBlogs';
@@ -22,7 +22,6 @@ const Home = () => {
       <OurBlogs />
       <FeatureIcons />
       <Footer />
-   
 
     </>
   )
