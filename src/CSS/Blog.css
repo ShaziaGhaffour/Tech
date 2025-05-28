@@ -1,0 +1,321 @@
+
+.custom-container {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  background-color: white;
+  top: 70px;
+  left: 0;
+  z-index: 100;
+}
+
+.custom-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.custom-home p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(113, 113, 113, 1);
+  margin: 0;
+}
+
+.custom-home img.arrow {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.blog-container {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.blog-frame {
+  width: 90%;
+  height: auto;
+  margin-left: 9px;
+}
+
+.blog-main {
+  flex: 65%;
+}
+
+.sidebar {
+  flex: 30%;
+  margin-top: 110px;
+}
+
+.blog-post h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0c0c0c;
+}
+
+.blog-post h6 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #717171;
+}
+
+.blog-post p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #0c0c0c;
+}
+
+.post-stats {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.stat-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.comment {
+  background: #f9f9f9;
+  border: 1px solid #ededed;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.comment-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  gap: 10px;
+}
+
+.user-info img {
+  width: 50px;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 12px;
+  color: #9e9e9e;
+}
+
+.rating {
+  background: #063a88;
+  color: white;
+  border-radius: 8px;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 12px;
+}
+
+.comment-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0c0c0c;
+}
+
+.comment-actions {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.reaction {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+.leave-comment textarea {
+  width: 80%;
+  height: 170px;
+  margin-top: 10px;
+  border: 1px solid #9e9e9e;
+  padding: 10px;
+}
+
+.leave-comment button {
+  float: right;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  width: 170px;
+  height: 35px;
+  font-size: 17px;
+  margin-right: 130px;
+}
+
+.sidebar h4 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.recent-post {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.recent-post img {
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.bloge-name {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.bloge-name > h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0c0c0c;
+}
+
+.bloge-name > h6 {
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.date-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #9e9e9e;
+  margin-top: 6px;
+}
+
+.tags button {
+  width: 110px;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  color: #007bff;
+  background-color: white;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .blog-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .sidebar {
+    margin-top: 40px;
+    flex: 100%;
+  }
+
+  .blog-main,
+  .sidebar {
+    width: 100%;
+  }
+
+  .recent-post {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .leave-comment textarea {
+    width: 95%;
+  }
+
+  .leave-comment button {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .custom-home {
+    margin-left: 15px;
+    flex-wrap: wrap;
+  }
+
+  .custom-home p {
+    font-size: 14px;
+  }
+
+  .blog-frame {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .blog-post h5 {
+    font-size: 18px;
+  }
+
+  .blog-post p {
+    font-size: 14px;
+  }
+
+  .username {
+    font-size: 16px;
+  }
+
+  .leave-comment textarea {
+    height: 140px;
+    width: 100%;
+  }
+
+  .leave-comment button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .recent-post {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recent-post img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tags button {
+    width: 100%;
+  }
+}

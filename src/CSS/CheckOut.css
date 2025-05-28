@@ -1,0 +1,132 @@
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  gap: 20px;
+  padding-bottom: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+  position: absolute;
+  top:80px;
+  left:150px;
+   background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.checkout-left, .checkout-right {
+  background-color: #fff;
+  border: 1px solid #ededed;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.checkout-left {
+  width: 100%;
+  max-width: 60%;
+}
+
+.checkout-right {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.add-address-box {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.address-fields {
+  margin-top: 15px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.display-address {
+  background-color: white;
+  color: rgb(73, 73, 199);
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.order-summary {
+  padding: 10px;
+}
+
+.summary-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0c0c0c;
+  margin-bottom: 10px;
+}
+
+.pay-btn {
+  margin: 20px auto;
+  padding: 12px;
+  width: 90%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.address-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.address-table th,
+.address-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.address-table th {
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+}
+

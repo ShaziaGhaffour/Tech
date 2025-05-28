@@ -1,0 +1,23 @@
+import React from 'react';
+import '../CSS/TopBrands.css'; 
+
+const TopBrands = () => {
+  return (
+    <div className='TopBrdands'>
+      <div className="topbrands-header">
+        <h4 className="topbrands-title">Top Brands</h4>
+      </div>
+
+      <div className="topbrands-logos">
+        <img src="/src/assets/Frame.svg" alt="Brand 1" className="brand-logo" />
+        <img src="/src/assets/Sonnay.svg"  alt="Brand 2" className="brand-logo" />
+        <img src="/src/assets/samsung.svg"  alt="Brand 3" className="brand-logo" />
+        <img src="/src/assets/Cannon.svg"  alt="Brand 4" className="brand-logo" />
+        <img src="/src/assets/huawei-svgrepo-com 1.svg"  alt="Brand 5" className="brand-logo" />
+        <img src="/src/assets/Clip path group.svg"  alt="Brand 6" className="brand-logo" />
+      </div>
+    </div>
+  );
+};
+
+export default TopBrands;

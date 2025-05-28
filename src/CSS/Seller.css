@@ -1,0 +1,143 @@
+
+
+.bestseller-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.bestseller-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bestseller-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.bestseller-viewall {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.bestseller-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.bestseller-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 100%;
+  max-width: 230px;
+  text-align: center;
+}
+
+
+
+.bestseller-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.bestseller-img:hover {
+   transform: translateY(-5px);
+  cursor: pointer;
+  filter: brightness(1.2); 
+}
+
+.bestseller-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.bestseller-name:hover {
+color:#007bff;
+cursor: pointer;
+}
+
+.bestseller-oldprice {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 5px;
+}
+.bestseller-price:hover {
+color:black;
+cursor: pointer;
+}
+
+.bestseller-price {
+  color: #e53935;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.loading,
+.error,
+.no-products {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.buttons button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: none;
+  background: rgb(255, 136, 0);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.buttons button:hover {
+  transform: scale(1.2);
+}
+
+.heart-icon {
+  color: red;
+  font-size: 18px;
+}
+
+.cart-icon {
+  color: green;
+  font-size: 18px;
+}
+.bestseller-toast-container {
+  position: relative;
+  height: 0;
+}
+.custom-toast {
+  position: absolute !important;
+  top: 0;
+  right: 40px;
+  z-index: 9999;
+ color:white !important;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+

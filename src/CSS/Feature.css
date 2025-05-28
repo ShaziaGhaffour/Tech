@@ -1,0 +1,38 @@
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+    width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.feature-box img {
+  width: 40px;
+  height: 34px;
+}
+
+.feature-box h6 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 12px;
+}
+@media (min-width: 768px) {
+  .feature-box {
+    width: 48%;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-box {
+    width: 23%;
+  }
+}
