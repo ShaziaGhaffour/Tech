@@ -11,7 +11,7 @@ const OurBlogs = () => {
 
       <div className="main-container">
         <div className="blog-content">
-          <img src="/src/assets/image.svg" alt="Meta" className="img-fluide" />
+          <img src="/public/image-bligs.svg" alt="Meta" className="img-fluide" />
           <div className="meta-box">
             <div className="meta-info">
               <div className="calendar">
