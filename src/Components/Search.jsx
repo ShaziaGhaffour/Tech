@@ -22,12 +22,12 @@ const phoneModels = [
 ];
 
 const products = [
-  { id: 1, img: '/public/frame image.svg', title: 'Red Case' },
-  { id: 2, img: '/public/frame image.svg', title: 'Yellow Case' },
-  { id: 3, img: '/public/frame image.svg', title: 'Orange Case' },
-  { id: 4, img: '/public/frame image.svg', title: 'Purple Case' },
-  { id: 5, img: '/public/frame image.svg', title: 'Pink Case' },
-  { id: 6, img: '/public/frame image.svg', title: 'Green Case' }
+  { id: 1, img: '/public/framimage.svg', title: 'Red Case' },
+  { id: 2, img: '/public/framimage.svg', title: 'Yellow Case' },
+  { id: 3, img: '/public/framimage.svg', title: 'Orange Case' },
+  { id: 4, img: '/public/framimage.svg', title: 'Purple Case' },
+  { id: 5, img: '/public/framimage.svg', title: 'Pink Case' },
+  { id: 6, img: '/public/framimage.svg', title: 'Green Case' }  
 ];
 
 const PhoneCaseCatalog = () => {

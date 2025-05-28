@@ -190,7 +190,7 @@ const Checkout = () => {
                     }
                     alt={item.productName || "Product"}
                     className="img-fluid"
-                    style={{ maxWidth: "100px", height:"300px" }}
+                    style={{ maxWidth: "100px" }}
                     onError={(e) => {
                       e.target.onerror = null;
                       e.target.src = "/public/blog image.svg";
