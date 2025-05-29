@@ -1,7 +1,5 @@
 import React from 'react';
 import '../CSS/TopBrands.css';
-
-// ✅ Import all images from /src/assets
 import Frame from '../assets/Frame.svg';
 import Sonnay from '../assets/Sonnay.svg';
 import Samsung from '../assets/samsung.svg';
