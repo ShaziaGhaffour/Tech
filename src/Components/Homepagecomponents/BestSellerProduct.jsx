@@ -146,7 +146,7 @@ const BestSellerProduct = () => {
         <h6 className="bestseller-viewall">View all</h6>
       </div>
 
-      <div id="toast-container" className="bestseller-toast-container"></div> {/* Toastify container */}
+      <div id="toast-container" className="bestseller-toast-container"></div> 
 
       <div className="bestseller-row">
         {Array.isArray(products) && products.length > 0 ? (

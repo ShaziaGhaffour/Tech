@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import "../CSS/SingleProduct.css";
+import Star from '../assets/star.svg';
+import arrowDown from '../../public/arrow-down.png';
+import shopIcon from '../assets/shop.svg';
+import imageLaptop from '../../public/image-laptop.svg'; 
+import heartIcon from '../../public/heartsapicon.svg';
+import singleProduct from '../../public/singleproduct.svg';
 
 const SingleProduct = () => {
   const [searchParams] = useSearchParams();
@@ -113,9 +119,9 @@ const SingleProduct = () => {
       <div className="container-single">
         <div className="breadcrumb">
           <a className="breadcrumb-link" href="/">Home</a>
-          <img src="/public/arrow-down.png" alt="arrow" className="breadcrumb-arrow" />
+          <img src={arrowDown} alt="arrow" className="breadcrumb-arrow" />
           <a className="breadcrumb-link" href="#">Products</a>
-          <img src="/public/arrow-down.png" alt="arrow" className="breadcrumb-arrow" />
+         <img src={arrowDown} alt="arrow" className="breadcrumb-arrow" />
           <a className="breadcrumb-link active" href="#">{product.name}</a>
         </div>
 
@@ -153,11 +159,11 @@ const SingleProduct = () => {
               <h5>{product.name}</h5>
               <div className="shops">
                 <div className="shopss">
-                  <img src="/public/shopping-cart-304843_640.png" alt="shop" className="shop-cart" />
+                  <img src={shopIcon} alt="shop" className="shop-cart" />
                   <h6>{product.stockQuantity > 0 ? "In Stock" : "Out of Stock"}</h6>
                 </div>
                 <div className="shopss">
-                  <img src="/public/shopping-cart-304843_640.png" alt="shop" className="shop-cart" />
+               <img src={shopIcon} alt="shop" className="shop-cart" />
                   <h6>Guaranteed</h6>
                 </div>
               </div>
@@ -228,7 +234,7 @@ const SingleProduct = () => {
         <div className="similar-products-heading">Similar Products</div>
         <div className="featured">
           <div className="new-products-card">
-            <img src="/public/imagesingleproduct.svg" className="rating-img"></img>
+            <img src={singleProduct} className="rating-img" alt="Single Product" />
             <div className="sepration" style={{ border: "1px solid #b4b4b4", marginTop: "5px" }}></div>
             <p className="new-products-name">
               MacBook Pro M2 MNEJ3 2022 LLA 13.3 inch
@@ -236,13 +242,13 @@ const SingleProduct = () => {
             <div className="price-and-rating-content">
               <div className="price">$930.90</div>
               <div className="rating">
-                <img src="/public/heartsapicon.svg" className="rating-star"></img>
+               <img src={heartIcon} className="rating-star" alt="Heart Icon" />
               </div>
             </div>
           </div>
 
           <div className="new-products-card">
-            <img src="/public/imagesingleproduct.svg" className="rating-img"></img>
+             <img src={singleProduct} className="rating-img" alt="Single Product" />
             <div className="sepration" style={{ border: "1px solid #b4b4b4", marginTop: "5px" }}></div>
             <p className="new-products-name">
               MacBook Pro M2 MNEJ3 2022 LLA 13.3 inch
@@ -250,14 +256,15 @@ const SingleProduct = () => {
             <div className="price-and-rating-content">
               <div className="price">$930.90</div>
               <div className="rating">
-                <img src="/public/Star22.svg" className="rating-star"></img>
+                <img src={Star} className="rating-star" alt="Star Icon" />
+
                 4.5
               </div>
             </div>
           </div>
 
           <div className="new-products-card">
-            <img src="/public/imagesingleproduct.svg" className="rating-img"></img>
+             <img src={singleProduct} className="rating-img" alt="Single Product" />
             <div className="sepration" style={{ border: "1px solid #b4b4b4", marginTop: "5px" }}></div>
             <p className="new-products-name">
               MacBook Pro M2 MNEJ3 2022 LLA 13.3 inch
@@ -265,14 +272,15 @@ const SingleProduct = () => {
             <div className="price-and-rating-content">
               <div className="price">$930.90</div>
               <div className="rating">
-                <img src="/public/Star22.svg" className="rating-star"></img>
+                <img src={Star} className="rating-star" alt="Star Icon" />
+
                 4.5
               </div>
             </div>
           </div>
 
           <div className="new-products-card">
-            <img src="/public/imagesingleproduct.svg" className="rating-img"></img>
+             <img src={singleProduct} className="rating-img" alt="Single Product" />
             <div className="sepration" style={{ border: "1px solid #b4b4b4", marginTop: "5px" }}></div>
             <p className="new-products-name">
               MacBook Pro M2 MNEJ3 2022 LLA 13.3 inch
@@ -280,7 +288,8 @@ const SingleProduct = () => {
             <div className="price-and-rating-content">
               <div className="price">$930.90</div>
               <div className="rating">
-                <img src="/public/Star22.svg" className="rating-star"></img>
+                <img src={Star} className="rating-star" alt="Star Icon" />
+
                 4.5
               </div>
             </div>
@@ -289,7 +298,7 @@ const SingleProduct = () => {
         <div className="similar-products-heading">Frequently bought together</div>
         <div className="featured">
           <div className="new-products-card">
-            <img src="/public/image-laptop.svg" className="rating-img"></img>
+            <img src={imageLaptop} className="rating-img" alt="Laptop" />
             <div className="sepration" style={{ border: "1px solid #b4b4b4", marginTop: "5px" }}></div>
             <p className="new-products-name" style={{ color: "blue" }}>
               Inateck 12.3-13 Inch Laptop Case Sleeve 360° Protection Compatible with 13 inch MacBook
@@ -297,13 +306,13 @@ const SingleProduct = () => {
             <div className="price-and-rating-content">
               <div className="price">$930.90</div>
               <div className="rating">
-                <img src="/public/heartsapicon.svg" className="rating-star"></img>
+                <img src={heartIcon} className="rating-star" alt="Heart Icon" />
               </div>
             </div>
           </div>
 
           <div className="new-products-card">
-            <img src="/public/image-laptop.svg" className="rating-img"></img>
+           <img src={imageLaptop} className="rating-img" alt="Laptop" />
             <div className="sepration" style={{ border: "1px solid #b4b4b4", marginTop: "5px" }}></div>
             <p className="new-products-name">
               Inateck 12.3-13 Inch Laptop Case Sleeve 360° Protection Compatible with 13 inch MacBook
@@ -311,14 +320,15 @@ const SingleProduct = () => {
             <div className="price-and-rating-content">
               <div className="price">$930.90</div>
               <div className="rating">
-                <img src="/public/Star22.svg" className="rating-star"></img>
+                <img src={Star} className="rating-star" alt="Star Icon" />
+
                 4.5
               </div>
             </div>
           </div>
 
           <div className="new-products-card">
-            <img src="/public/image-laptop.svg" className="rating-img"></img>
+            <img src={imageLaptop} className="rating-img" alt="Laptop" />
             <div className="sepration" style={{ border: "1px solid #b4b4b4", marginTop: "5px" }}></div>
             <p className="new-products-name">
               Inateck 12.3-13 Inch Laptop Case Sleeve 360° Protection Compatible with 13 inch MacBook
@@ -326,14 +336,15 @@ const SingleProduct = () => {
             <div className="price-and-rating-content">
               <div className="price">$930.90</div>
               <div className="rating">
-                <img src="/public/Star22.svg" className="rating-star"></img>
+                <img src={Star} className="rating-star" alt="Star Icon" />
+
                 4.5
               </div>
             </div>
           </div>
 
           <div className="new-products-card">
-            <img src="/public/image-laptop.svg" className="rating-img"></img>
+           <img src={imageLaptop} className="rating-img" alt="Laptop" />
             <div className="sepration" style={{ border: "1px solid #b4b4b4", marginTop: "5px" }}></div>
             <p className="new-products-name">
               Inateck 12.3-13 Inch Laptop Case Sleeve 360° Protection Compatible with 13 inch MacBook
@@ -341,7 +352,7 @@ const SingleProduct = () => {
             <div className="price-and-rating-content">
               <div className="price">$930.90</div>
               <div className="rating">
-                <img src="/public/Star22.svg" className="rating-star"></img>
+               <img src={Star} className="rating-star" alt="Star Icon" />
                 4.5
               </div>
             </div>
