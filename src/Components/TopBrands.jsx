@@ -1,5 +1,6 @@
 import React from 'react';
 import '../CSS/TopBrands.css'; 
+import ClipPathGroup from '../../src/assets/Clip path group.svg';
 
 const TopBrands = () => {
   return (
@@ -14,7 +15,8 @@ const TopBrands = () => {
         <img src="/public/samsung2.svg"  alt="Brand 3" className="brand-logo" />
         <img src="/public/cannon.svg"  alt="Brand 4" className="brand-logo" />
         <img src="/public/huawei-svgrepo.svg"  alt="Brand 5" className="brand-logo" />
-        <img src="/src/assets/Clip path group.svg"  alt="Brand 6" className="brand-logo" />
+        {/* <img src="/src/assets/Clip path group.svg"  alt="Brand 6" className="brand-logo" /> */}
+        <img src={ClipPathGroup} alt="Brand 6" />
       </div>
     </div>
   );
