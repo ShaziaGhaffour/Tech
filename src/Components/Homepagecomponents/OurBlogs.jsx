@@ -38,7 +38,7 @@ const OurBlogs = () => {
 
         <div className="side-blogs">
           <div className="side-blog">
-         <img src={BlogImage} alt="Blog" className="img-fluids" />
+         <img src={BlogImage} alt="Blog" className="img-fluides"/>
             <div className="blog-box">
               <h3 className="blog-heading orange">8 Things You Probably Didn’t Know About Headphones</h3>
               <p className="blog-desc">
@@ -53,17 +53,18 @@ const OurBlogs = () => {
               </div>
             </div>
           </div>
-
-          <div className="side-blog">
-             <img src={BlogImage2} alt="Blog2" className="img-fluids" />
+           <div className="side-blog">
+         <img src={BlogImage2} alt="Blog2" className="img-fluides" />
             <div className="blog-box">
-              <h3 className="blog-heading">Analyzing the August 17th Bitcoin Price Drop</h3>
+              <h3 className="blog-heading orange" id="analyzing">Analyzing the August 17th Bitcoin Price Drop</h3>
               <p className="blog-desc">
                 On August 17th at 9:30PM UTC, Bitcoin’s price dropped more than 8% in a 10-minute window...
               </p>
-              <div className="calendar">
-               <img src={CalendarIcon} width="20" height="20" />
-                <h6 className="meta-text gray">August , 8 , 2023</h6>
+              <div className="blog-footer">
+                <div className="calendar">
+                 <img src={CalendarIcon} width="20" height="20" />
+                  <h6 className="meta-text gray">August , 8 , 2023</h6>
+                </div>
               </div>
             </div>
           </div>
