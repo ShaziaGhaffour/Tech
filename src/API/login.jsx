@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../CSS/Login.css"
 import { useNavigate } from 'react-router-dom';
-
+import Home from '../Components/Home';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -47,6 +47,7 @@ const Login = () => {
   };
 
   return (
+    <>
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
@@ -69,6 +70,8 @@ const Login = () => {
         <button type="submit">Login</button>
       </form>
     </div>
+    <Home />
+    </>
   );
 };
 

@@ -5,14 +5,16 @@
   max-width: 800px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
-  margin: 30px auto;
   box-sizing: border-box;
+  position: absolute;
+  top:120px;
+  left:240px;
+  z-index: 100;
 }
 
 .search-container {
  position: relative;
   width: 100%;
-  /* margin: 20px auto; */
   margin-bottom: 35px;
   justify-content: space-between;
   display: flex;

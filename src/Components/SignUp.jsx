@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../CSS/SignUp.css';
+import Home from '../Components/Home';
 
 const SignupForm = ({ onLogin }) => {
   const navigate = useNavigate(); 
@@ -58,6 +59,7 @@ const SignupForm = ({ onLogin }) => {
   };
 
   return (
+    <>
     <div className="signup-container">
       <div className="signup-card">
         <div className="tab-header">
@@ -178,6 +180,8 @@ const SignupForm = ({ onLogin }) => {
         </div>
       </div>
     </div>
+       <Home />
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllCategories, getProductsByCategory, getProducts } from '../API/ProductTop';
 import '../CSS/ProductTop.css';
+import Home from '../Components/Home';
 
 const BASE_URL = 'https://ecomerceapis.runasp.net';
 
@@ -36,6 +37,7 @@ const ProductTop = () => {
   };
 
   return (
+    <>
     <div className="container-products">
       <div className="main-container-2">
         <div className="left-side-container">
@@ -91,6 +93,8 @@ const ProductTop = () => {
         </div>
       </div>
     </div>
+    <Home />
+    </>
   );
 };
 

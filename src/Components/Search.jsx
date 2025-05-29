@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../CSS/Search.css"
+import Home from '../Components/Home';
 const phoneModels = [
   { id: 'x', name: 'X Case', count: '' },
   { id: '11', name: '11 Case', count: '' },
@@ -36,6 +37,7 @@ const PhoneCaseCatalog = () => {
   
 
   return (
+    <>
     <div className="phone-catalog">
     <div className="search-container">
   <input
@@ -81,6 +83,8 @@ const PhoneCaseCatalog = () => {
 </div>
       </div>
     </div>
+    <Home />
+    </>
   );
 };
 

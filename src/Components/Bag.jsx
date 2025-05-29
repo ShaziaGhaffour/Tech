@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaTrashAlt } from 'react-icons/fa';
 import '../CSS/Bage.css';
+import Home from '../Components/Home';
 
 const Bag = () => {
   const [carts, setCarts] = useState([]);
@@ -52,6 +53,7 @@ const Bag = () => {
 
 
   return (
+    <>
     <div className="cart-model">
       <div className="product-box">
         {loading ? (
@@ -80,6 +82,8 @@ const Bag = () => {
         <button className="checkout-btn" onClick={() => navigate('/order')}>Proceed to Cart</button>
       </div>
     </div>
+    <Home />
+    </>
   );
 };
 
