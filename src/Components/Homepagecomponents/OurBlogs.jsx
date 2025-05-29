@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../CSS/OurBlog.css';
+import BlogImage1 from '../../assets/blog image.svg';
 
 const OurBlogs = () => {
   return (
@@ -11,7 +12,8 @@ const OurBlogs = () => {
 
       <div className="main-container">
         <div className="blog-content">
-          <img src="/public/image-bligs.svg" alt="Meta" className="img-fluide" />
+          {/* <img src="/public/image-bligs.svg" alt="Meta" className="img-fluide" /> */}
+           <img src={BlogImage1} alt="Meta" className="img-fluide" />
           <div className="meta-box">
             <div className="meta-info">
               <div className="calendar">
