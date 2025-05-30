@@ -23,7 +23,7 @@
 
 .brand-logo {
   max-width: 100px;
-  height: auto;
+  height: 100px;
     transition: transform 0.3s ease;
 }
  
