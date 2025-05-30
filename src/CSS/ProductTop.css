@@ -1,23 +1,27 @@
 .container-products {
   display: flex;
+  flex-direction: column;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-   background-color: #fff;
-   width: 100%;
-   max-width: 900px;
-   position: absolute;
-   top:100px;
-   left:240px;
-   z-index: 1000;
-   height: 100vh;
-   max-height: 400px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 900px;
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 1000;
+  height: auto;
+  max-height: none;
+  box-sizing: border-box;
 }
 
 .main-container-2 {
   display: flex;
+  flex-direction: row;
   width: 100%;
   max-width: 900px;
 }
+
 .left-side-container {
   width: 20%;
   display: flex;
@@ -28,15 +32,17 @@
 .category-button {
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   width: 100%;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  text-align: left;
 }
 
 .active-category {
   color: white;
+  background-color: #007BFF;
 }
 
 .right-side-container {
@@ -52,6 +58,67 @@
 }
 
 .product-card {
-  flex: 1 1 calc(33.333% - 20px); 
+  flex: 1 1 calc(33.333% - 20px);
   max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .container-products {
+    margin-top: 50px;
+  }
+  .main-container-2 {
+    flex-direction: column;
+  }
+
+  .left-side-container,
+  .right-side-container {
+    width: 100%;
+    border-right: none;
+    padding: 10px 0;
+  }
+
+  .right-side-container {
+    padding-left: 0;
+  }
+
+  .product-card {
+    flex: 1 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+
+  .container-products {
+    left: 20px;
+    right: 20px;
+    top: 80px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .left-side-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .category-button {
+    width: 32%; 
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .product-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .container-products {
+    left: 10px;
+    right: 10px;
+    top: 60px;
+    padding: 15px;
+  }
 }

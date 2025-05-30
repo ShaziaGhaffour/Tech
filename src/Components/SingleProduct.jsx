@@ -7,6 +7,7 @@ import shopIcon from '../assets/shop.svg';
 import imageLaptop from '../../public/image-laptop.svg'; 
 import heartIcon from '../../public/heartsapicon.svg';
 import singleProduct from '../../public/singleproduct.svg';
+import Footer from '../Components/Homepagecomponents/Footer';
 
 const SingleProduct = () => {
   const [searchParams] = useSearchParams();
@@ -366,6 +367,7 @@ const SingleProduct = () => {
 </div>
 
       </div>
+      <Footer />
     </>
   );
 };
