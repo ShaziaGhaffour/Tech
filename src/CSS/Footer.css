@@ -78,7 +78,7 @@
 .social-icons {
   display: flex;
   flex-direction: row;
-  width: 300px;
+  width: 250px;
   margin-top: 15px;
   background-color: #021736;
 }
@@ -176,7 +176,7 @@
 
 @media (max-width: 480px) {
   .col {
-    flex: 1 1 100%;
+    flex: 1 1 0%;
     padding: 15px 10px;
     text-align: center;
   }
@@ -190,7 +190,7 @@
   }
 
   .email-input {
-    width: 90%;
+    width: 50%;
   }
 
   .social-icons {

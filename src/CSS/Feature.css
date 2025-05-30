@@ -1,11 +1,10 @@
 .feature-container {
   display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-evenly;
+justify-content: space-evenly;
   padding: 0;
     width: 100%;
-  max-width: 1170px;
-  margin: 10px auto;
+  max-width: 1160px;
+  margin: 30px auto;
 }
 
 .feature-box {
@@ -13,6 +12,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 1rem;
+  margin: auto;
 }
 
 .feature-box img {
@@ -29,6 +29,7 @@
   .feature-container {
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
   }
 
   .feature-box {

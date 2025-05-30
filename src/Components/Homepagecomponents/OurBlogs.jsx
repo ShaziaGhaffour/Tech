@@ -17,15 +17,15 @@ const OurBlogs = () => {
 
       <div className="main-container">
         <div className="blog-content">
-           <img src={Image} alt="Meta" className="img-fluide" />
+          <img src={Image} alt="Meta" className="img-fluide" />
           <div className="meta-box">
             <div className="meta-info">
               <div className="calendar">
-               <img src={CalendarIcon} width="20" height="20" />
+                <img src={CalendarIcon} width="20" height="20" />
                 <h6 className="meta-text">August , 8 , 2023</h6>
               </div>
               <div className="calendar">
-              <img src={TimerIcon} width="20" height="20" />
+                <img src={TimerIcon} width="20" height="20" />
                 <h6 className="meta-text">3 min read</h6>
               </div>
             </div>
@@ -38,7 +38,8 @@ const OurBlogs = () => {
 
         <div className="side-blogs">
           <div className="side-blog">
-         <img src={BlogImage} alt="Blog" className="img-fluides"/>
+                 <div className='image-blogss'>
+            <img src={BlogImage} alt="Blog" className="img-fluides" />
             <div className="blog-box">
               <h3 className="blog-heading orange">8 Things You Probably Didn’t Know About Headphones</h3>
               <p className="blog-desc">
@@ -46,24 +47,28 @@ const OurBlogs = () => {
               </p>
               <div className="blog-footer">
                 <div className="calendar">
-                 <img src={CalendarIcon} width="20" height="20" />
+                  <img src={CalendarIcon} width="20" height="20" />
                   <h6 className="meta-text gray">August , 8 , 2023</h6>
                 </div>
-                 <img src={SaveIcon} alt="Save" className="save-icon" />
+                <img src={SaveIcon} alt="Save" className="save-icon" />
               </div>
-            </div>
+            </div></div>
           </div>
-           <div className="side-blog">
-         <img src={BlogImage2} alt="Blog2" className="img-fluides" />
-            <div className="blog-box">
-              <h3 className="blog-heading orange" id="analyzing">Analyzing the August 17th Bitcoin Price Drop</h3>
-              <p className="blog-desc">
-                On August 17th at 9:30PM UTC, Bitcoin’s price dropped more than 8% in a 10-minute window...
-              </p>
-              <div className="blog-footer">
-                <div className="calendar">
-                 <img src={CalendarIcon} width="20" height="20" />
-                  <h6 className="meta-text gray">August , 8 , 2023</h6>
+          <div className="side-blog">
+            <div className='image-blogss'>
+              <img src={BlogImage2} alt="Blog2" className="img-fluides" />
+              <div className="blog-box">
+                <h3 className="blog-heading orange" id="analyzing">Analyzing the August 17th Bitcoin Price Drop</h3>
+                <p className="blog-desc">
+                  On August 17th at 9:30PM UTC, Bitcoin’s price dropped more than 8% in a 10-minute window...
+                </p>
+
+
+                <div className="blog-footer">
+                  <div className="calendar">
+                    <img src={CalendarIcon} width="20" height="20" />
+                    <h6 className="meta-text gray">August , 8 , 2023</h6>
+                  </div>
                 </div>
               </div>
             </div>
