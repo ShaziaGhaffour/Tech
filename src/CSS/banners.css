@@ -36,6 +36,7 @@
 
 .text-container h2 {
   font-size: 64px;
+  font-weight: 400;
   color: #042352;
   margin-bottom: 10px;
 }
@@ -122,3 +123,4 @@
     max-width: 100%;
   }
 }
+

@@ -153,7 +153,7 @@ cursor: pointer;
 @media (max-width: 768px) {
   .bestseller-header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
   }
 
@@ -174,8 +174,13 @@ cursor: pointer;
   }
 }
 @media (max-width: 480px) {
+  .bestseller-row {
+    justify-content: center; 
+  }
+
   .bestseller-card {
-    flex: 1 1 100%; 
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
   }
 
   .bestseller-img {
@@ -190,4 +195,3 @@ cursor: pointer;
     font-size: 12px;
   }
 }
-
