@@ -1,4 +1,3 @@
-// ProductHomeWrapper.jsx
 import React, { useEffect, useState } from 'react';
 import ProductTop from '../../Components/ProductTop'; 
 import Home from '../../Components/Home';

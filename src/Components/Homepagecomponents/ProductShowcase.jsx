@@ -4,8 +4,6 @@ import '../../CSS/ProductShowcase.css';
 const ProductShowcase = () => {
   return (
     <div className="container showcase-container">
-      
-      {/* iPhone Section */}
       <div className="iphone-section">
         <div className="series">
           <img src="/src/assets/Ellipse 448.svg" width="60" className="imagess" alt="iPhone ellipse" />

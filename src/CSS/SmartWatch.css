@@ -76,42 +76,52 @@
   margin-left: 40px;
   cursor: pointer;
 }
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .smartwatch-container {
     flex-direction: column;
     height: auto;
+    padding: 30px 20px;
   }
 
   .smart-card {
-    width: 100%;
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .smart {
+    font-size: 36px;
+    margin: 20px 0 10px 0;
+  }
+
+  .smarts {
+    margin: 10px 0;
+  }
+
+  .btn-view {
+    margin: 15px auto;
+    display: block;
   }
 
   .smart-card-ellipse {
     position: relative;
-    left: 0;
-    top:270px;
-    width: 100%;
-    max-width: none;
-    height: 200px;
-    border-radius: 0;
-    border-top-left-radius: 210px;
-    border-top-right-radius: 210px;
+    max-width: 300px;
+    height: 300px;
+    margin: 30px auto 0 auto;
+    border-radius: 50%;
   }
 
   .frame {
     position: relative;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-  }
-
-  .btn-view {
-    margin-left: 12px;
+    top: auto;
+    left: auto;
+    max-width: 250px;
+    margin: 0 auto;
   }
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .smart {
     font-size: 28px;
   }
@@ -120,8 +130,13 @@
     font-size: 14px;
   }
 
-  .btn-view {
-    width: 100%;
-    margin: 10px 0;
+  .smart-card-ellipse {
+    max-width: 250px;
+    height: 250px;
+     border-radius: 15%;
+  }
+
+  .frame {
+    max-width: 200px;
   }
 }
