@@ -1,146 +1,12 @@
-.faq-container {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  margin: auto
-}
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 300;
- gap: 8px;
-  margin-left: 30px;
-  margin-top: -15px;
-  
-}
-.breadcrumb-item {
-  color: rgba(113, 113, 113, 1);
-}
-
-.breadcrumb-item.active {
-  color: #007bff;
-  text-decoration: underline;
-}
-.breadcrumb-arrow {
-  width: 20px;
-  height: 20px;
-  
-}
-.faq-banner-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color:white;
-}
-
-.faq-banner {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-}
-.container{
-  width: 100%;
-  background-color: white;
-}
-.main-container {
-  display: flex;
-  gap: 40px;
-  background-color: white;
-}
-.left-side-container {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-}
-
-.left-side-container h6 {
-  font-size: 20px;
-  font-weight: 500;
-  color: rgb(12, 12, 12);
-  margin-bottom: 15px;
-}
-
-.left-side-container p {
-  font-size: 15px;
-  font-weight: 300;
-  color: rgb(12, 12, 12);
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-.left-side-container p.active {
-  color: blue;
-}
-.right-side-container {
-  width: 75%;
-}
-
-.accordion {
-  width: 100%;
-}
-
-.card {
-  margin-bottom: 10px;
-  background-color: white;
-  border: none;
-}
-
-.card-header {
-  background-color: white;
-  padding: 0;
-  border: none;
-}
-
-.question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 22px;
-  font-weight: 500;
-  color: orange;
-  padding: 15px 0;
-  cursor: pointer;
-}
-
-.arrow {
-  width: 20px;
-  height: 20px;
-}
-
-.arrow.active {
-  transform: rotate(180deg);
-}
-.collapse {
-  display: none;
-}
-
-.collapse.show {
-  display: block;
-}
-
-.card-body {
-  font-size: 17px;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-  padding: 15px 0;
-}
-
 body {
   margin: 0;
   padding: 0;
 }
 
 .faq-container {
-  position: absolute;
-  top: 85px;
-  left: 0;
-  z-index: 100;
   width: 100%;
   margin: auto;
+  max-width: 1200px;
 }
 
 .breadcrumb {
@@ -149,7 +15,7 @@ body {
   font-size: 17px;
   font-weight: 300;
   gap: 10px;
-  margin-bottom: 15px;
+  margin:20px 50px
 }
 
 .breadcrumb-item {
@@ -178,6 +44,7 @@ body {
   width: 100%;
   max-width: 1000px;
   height: auto;
+  margin-bottom: 30px;
 }
 
 .container {

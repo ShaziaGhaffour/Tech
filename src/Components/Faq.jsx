@@ -1,5 +1,8 @@
 import React from 'react';
 import "../CSS/faq.css";
+import arrowDown from "../../public/arrow-down.png";
+import faqBanner from "../../public/faqBanner.svg";
+import Footer from "../Components/Homepagecomponents/Footer";
 
 const FAQ = () => {
   return (
@@ -7,14 +10,12 @@ const FAQ = () => {
       <div className="faq-container">
         <div className="breadcrumb">
           <p className="breadcrumb-item">Home</p>
-          <img src="/public/arrow-down.png" className="breadcrumb-arrow" alt="Arrow" />
+          <img src={arrowDown} className="breadcrumb-arrow" alt="Arrow" />
           <p className="breadcrumb-item active">FAQs</p>
         </div>
         <div className="faq-banner-wrapper">
-          <img src="/public/Frame 26086945faq.svg" className="faq-banner" alt="FAQ Banner" />
+      <img src={faqBanner} className="faq-banner" alt="FAQ Banner" />
         </div>
-     
-
       <div className="container">
         <div className="main-container">
           <div className="left-side-container">
@@ -43,6 +44,7 @@ const FAQ = () => {
           </div>
         </div>
       </div> </div>
+      <Footer />
     </>
   );
 };
