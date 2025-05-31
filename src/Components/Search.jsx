@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "../CSS/Search.css"
 import Home from '../Components/Home';
 import searchIcon from '../../public/search-normal.svg';
+import framImage from '../../public/framimage.svg';
 
 const phoneModels = [
   { id: 'x', name: 'X Case', count: '' },
@@ -25,12 +26,12 @@ const phoneModels = [
 ];
 
 const products = [
-  { id: 1, img: '/public/framimage.svg', title: 'Red Case' },
-  { id: 2, img: '/public/framimage.svg', title: 'Yellow Case' },
-  { id: 3, img: '/public/framimage.svg', title: 'Orange Case' },
-  { id: 4, img: '/public/framimage.svg', title: 'Purple Case' },
-  { id: 5, img: '/public/framimage.svg', title: 'Pink Case' },
-  { id: 6, img: '/public/framimage.svg', title: 'Green Case' }  
+  { id: 1, img: framImage, title: 'Red Case' },
+  { id: 2, img: framImage, title: 'Yellow Case' },
+  { id: 3, img: framImage, title: 'Orange Case' },
+  { id: 4, img: framImage, title: 'Purple Case' },
+  { id: 5, img: framImage, title: 'Pink Case' },
+  { id: 6, img: framImage, title: 'Green Case' }  
 ];
 
 const PhoneCaseCatalog = () => {
