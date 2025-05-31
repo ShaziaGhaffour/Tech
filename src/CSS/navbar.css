@@ -54,7 +54,7 @@
   }
 
   .navbar-toggle {
-    display: none;
+    display: block;
   }
 
   .nav-container {

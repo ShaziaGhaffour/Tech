@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "../CSS/Search.css"
 import Home from '../Components/Home';
+import searchIcon from '../../public/search-normal.svg';
+
 const phoneModels = [
   { id: 'x', name: 'X Case', count: '' },
   { id: '11', name: '11 Case', count: '' },
@@ -48,7 +50,8 @@ const PhoneCaseCatalog = () => {
     placeholder="Search Phone Case"
   />
 
-  <img src="/public/search-normal.svg" alt="search icon" className="search-icon" />
+<img src={searchIcon} alt="Search Icon" className="search-icon" />
+
    <button
     className="clear-btn"
     onClick={() => setSearchQuery('')}

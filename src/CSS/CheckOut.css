@@ -167,5 +167,25 @@
     font-size: 12px;
     padding: 6px;
   }
+.cart-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cart-icon {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart-icon p {
+    font-size: 12px;
+  }
 }
 
