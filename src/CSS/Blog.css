@@ -2,11 +2,7 @@
 .custom-container {
   width: 100%;
   padding: 20px 0;
-  position: absolute;
   background-color: white;
-  top: 70px;
-  left: 0;
-  z-index: 100;
 }
 
 .custom-home {
@@ -171,6 +167,10 @@
   font-size: 20px;
   margin-top: 20px;
 }
+.sidebar h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 
 .sidebar ul {
   list-style: none;
@@ -308,6 +308,8 @@
   .recent-post {
     flex-direction: column;
     align-items: center;
+    width:250px;
+    margin: 10px 0;
   }
 
   .recent-post img {

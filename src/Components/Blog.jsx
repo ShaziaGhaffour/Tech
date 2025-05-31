@@ -1,14 +1,20 @@
 import React from 'react';
 import '../CSS/Blog.css'; 
+import arrowDown from "../../public/arrow-down.png";
+import blogImage from "../../public/Frameblog.svg";
+import blogImage55 from "../../public/blog image55.svg";
+import Footer from './Homepagecomponents/Footer';
+
+
 const Blog = () => {
   return (
     <>
       <div className="custom-container">
         <div className="custom-home">
           <p>Home</p>
-          <img src="/arrow-down.png" className="arrow" alt="down-arrow" />
+   <img src={arrowDown} className="breadcrumb-arrow" alt="Arrow" />
           <p>Blog</p>
-          <img src="/arrow-down.png" className="arrow" alt="down-arrow" />
+               <img src={arrowDown} className="breadcrumb-arrow" alt="Arrow" />
           <p>Headphone</p>
         </div>
       <div className="blog-container">
@@ -16,7 +22,7 @@ const Blog = () => {
           <div className="blog-post">
             <h5>5 Things You Probably Didn’t Know About Headphones</h5>
             <h6>By George Larens on March 28, 2023</h6>
-            <img src="/public/Frame 26086788blog.svg" className="blog-frame" alt="Blog Main" />
+           <img src={blogImage} className="blog-frame" alt="Blog Main" />
             <p>Headphones have become an integral part of our daily lives...</p>
 
             <h5>1 - Stereo Sound Perception</h5>
@@ -54,9 +60,9 @@ const Blog = () => {
             <li>Buying Guides and Tips</li>
           </ul>
 
-          <h4>Recent Posts</h4>
+          <h5>Recent Posts</h5>
           <div className="recent-post">
-  <img src="/public/blog image55.svg" alt="recent post" />
+<img src={blogImage55} alt="recent post" />
   <div className="bloge-name">
     <h5>Should You Buy The All New Apple AirPods?</h5>
     <h6>Be it an iPhone or any other Apple device...</h6>
@@ -66,7 +72,7 @@ const Blog = () => {
   </div>
 </div>
 <div className="recent-post">
-  <img src="/public/blog image55.svg" alt="recent post" />
+ <img src={blogImage55} alt="recent post" />
   <div className="bloge-name">
     <h5>Should You Buy The All New Apple AirPods?</h5>
     <h6>Be it an iPhone or any other Apple device...</h6>
@@ -76,7 +82,7 @@ const Blog = () => {
   </div>
 </div>
 <div className="recent-post">
-  <img src="/public/blog image55.svg" alt="recent post" />
+<img src={blogImage55} alt="recent post" />
   <div className="bloge-name">
     <h5>Should You Buy The All New Apple AirPods?</h5>
     <h6>Be it an iPhone or any other Apple device...</h6>
@@ -97,6 +103,7 @@ const Blog = () => {
           </div>
         </div>
       </div></div>
+      <Footer />
     </>
   );
 };
